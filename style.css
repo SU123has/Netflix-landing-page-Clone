@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.border-white {
+    border: 2px solid transparent;
+}
+
+.border-white:hover {
+    border: 2px solid white;
+}
+
+body {
+    background-color: black;
+}
+
+.logIn-container {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8)0,rgba(0,0,0,0)52%,rgba(0,0,0,0.8)100%), url(assets/images/hero_section_bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.navbar {
+    height: 40px;
+    width: 85vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.nav-logo {
+    height:32px;
+    width:100px;
+}
+
+.logo {
+    background-image: url(assets/images/logo.svg);
+    height: 32px;
+    width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav-right {
+    color: white;
+    display: flex;
+}
+
+.select-lang {
+    background-color: rgb(20, 20, 20);
+    border: 0.08mm solid rgb(134, 133, 133);
+    color: rgb(231, 231, 231);
+    font-size: 1rem;
+    border-radius: 4px;
+    width: 140px;
+    height: 32px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-right .nav-signIn {
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    background-color: red;
+    border-radius: 4px;
+    width: 77px;
+    height: 32px;
+}
+
+.hero-container {
+    height: 100%; /* of parent logIn-container */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-container .firstline {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.8rem;
+}
+
+.hero-container .secondline {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    letter-spacing: 0.3px;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+.hero-container .thirdline {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    letter-spacing: 0.3px;
+    margin-top: 24px;
+    font-weight: 500;
+}
+
+.input-field {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    gap: 10px;
+}
+
+.input-field input {
+    height: 56px;
+    width: 20vw;
+    padding: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.545);
+    border: 0.05mm solid rgb(153, 152, 152, 0.8);
+    color: white;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.input-field .get-started {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: red;
+    height: 56px;
+    width: 200px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+.button-hover-effect {
+    background-color: red;
+}
+
+.button-hover-effect:hover {
+    background-color: rgb(223, 0, 0);
+    cursor: pointer;
+}
+
+.line-separator {
+    height: 8px;
+    background-color: #212020;
+}
+
+/* first-section */
+.first-section {
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    padding: 2% 0 2% 0;
+}
+
+.first-section .text-section {
+    max-width: 40vw;
+}
+
+.first-section .text-section .first-line {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.first-section .text-section .second-line {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    letter-spacing: 0.3px;
+}
+
+.first-section .image-section {
+    position: relative;
+}
+
+.first-section .image-section img {
+    width: 590px;
+    height: 440px;
+    position: relative;
+    z-index: 10;
+}
+.first-section .image-section video {
+    width: 428px;
+    position: absolute;
+    right: 83px;
+    top: 92px;
+}
+
+
+/* second-section */
+.second-section {
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    padding: 40px 0px 40px 0px;
+}
+
+.second-section .text-section {
+    max-width: 40vw;
+}
+
+.second-section .text-section .first-line {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.second-section .text-section .second-line {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    letter-spacing: 0.3px;
+}
+
+.second-section .image-section {
+    position: relative;
+}
+
+.second-section .image-section img {
+    width: 590px;
+    height: 440px;
+    position: relative;
+}
+
+.second-section .image-section .box {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 314px;
+    right: 136px;
+    border: 1px solid rgb(164, 163, 163);
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 318px;
+    height: 104px;
+}
+
+.second-section .image-section .box .poster {
+    width: 57px;
+    height: 80px;
+    margin-right: 5px;
+}
+
+.second-section .image-section .box .text-box .first-line {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.second-section .image-section .box .text-box .second-line {
+    font-size: 1rem;
+    color: rgb(7, 138, 246);
+}
+
+.second-section .image-section .box .gif {
+    width: 50px;
+    height: 48px;
+    margin-left: 10px;
+}
+
+/* third-section */
+.third-section {
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    padding: 40px 0px 40px 0px;
+}
+
+.third-section .text-section {
+    max-width: 40vw;
+}
+
+.third-section .text-section .first-line {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.third-section .text-section .second-line {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    letter-spacing: 0.3px;
+}
+
+.third-section .image-section {
+    position: relative;
+}
+
+.third-section .image-section img {
+    width: 590px;
+    height: 440px;
+    position: relative;
+    z-index: 10;
+}
+.third-section .image-section video {
+    width: 370px;
+    position: absolute;
+    right: 116px;
+    top: 51px;
+}
+
+/* faq-section */
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.faq-section .questions .ques .box {
+    border-radius: 12px;
+    background-color: #2d2d2d;
+    width: 60vw;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.faq-section .head {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.faq-section .foot {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    letter-spacing: 0.3px;
+    margin-bottom: 30px;
+}
+
+.faq-section .questions .ques .box:hover {
+    cursor: pointer;
+    background-color: rgb(102, 102, 102);
+}
+
+/* footer-section */
+.footer-section {
+    font-size: 1.1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section .list-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-section .list-block .list {
+    margin-right: 50px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.673);
+}
+
+.footer-section .list-block .list li {
+    list-style-type: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section .last-block {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.701);
+}
+
+/* media-queries */
+
+@media screen and (max-width: 590px){
+    .first-section .text-section, .second-section .text-section, .third-section .text-section {
+        text-align: center;
+    }
+
+    .first-section .image-section img, .second-section .image-section img, .third-section .image-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .first-section .image-section video, .second-section .image-section video {
+        width: 73%;
+        height: auto;
+        top: 20%;
+        right: 14%;
+    }
+
+    .third-section .image-section video {
+        width: 62%;
+        height: auto;
+        top: 12%;
+        right: 19%;
+    }
+
+    .second-section .image-section .box {
+        width: 91%;
+        height: auto;
+        top: 44%;
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 1475px){
+    .first-section .text-section, .second-section .text-section, .third-section .text-section {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .third-section .text-section .first-line {
+        font-size: 2rem;
+    }
+}

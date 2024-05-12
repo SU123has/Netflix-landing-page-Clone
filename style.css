@@ -136,6 +136,7 @@ body {
 .input-field input {
     height: 56px;
     width: 20vw;
+    min-width: 200px;
     padding: 20px;
     border-radius: 5px;
     outline: none;
@@ -181,7 +182,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 80vw;
+    /* max-width: 80vw; */
     margin: auto;
     padding: 2% 0 2% 0;
 }
@@ -230,7 +231,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 80vw;
+    /* max-width: 80vw; */
     margin: auto;
     padding: 40px 0px 40px 0px;
 }
@@ -308,7 +309,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 80vw;
+    /* max-width: 80vw; */
     margin: auto;
     padding: 40px 0px 40px 0px;
 }
